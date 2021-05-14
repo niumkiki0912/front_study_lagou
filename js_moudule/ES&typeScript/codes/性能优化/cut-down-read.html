@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>减少读取次数</title>
+</head>
+<body>
+  <div id="skip"></div>
+
+
+  <script>
+    var box = document.getElementById('skip')
+
+    function hasEle(ele, cls) {
+      return ele.className === cls
+    }
+
+
+    function hasEle(ele, cls) {
+      var className =  ele.className
+      return className === cls
+    }
+
+    hasEle(box, 'skip')
+  </script>
+</body>
+</html>

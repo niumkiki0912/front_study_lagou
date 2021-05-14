@@ -1,0 +1,10 @@
+{
+  "name": "my-web-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.32.12",
+    "scss": "^0.2.4"
+  }
+}

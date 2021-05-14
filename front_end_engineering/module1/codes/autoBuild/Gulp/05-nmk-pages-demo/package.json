@@ -1,0 +1,14 @@
+{
+  "name": "05-nmk-pages-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "clean": "nmk-pages clean",
+    "build": "nmk-pages build",
+    "develop": "nmk-pages develop"
+  },
+  "devDependencies": {
+    "nmk-pages": "^0.1.0"
+  }
+}
