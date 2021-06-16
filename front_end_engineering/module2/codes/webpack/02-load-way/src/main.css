@@ -1,0 +1,9 @@
+@import url(reset.css);
+/*@import 'reset.css';*/
+
+body {
+  min-height: 100vh;
+  background: #f4f8fb;
+  background-image: url(background.png);
+  background-size: cover;
+}

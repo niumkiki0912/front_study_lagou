@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>模块化演变过程(stage 2)</title>
+</head>
+<body>
+  <h2>命名空间方式</h2>
+  <h2>每个模块暴露一个对象， 所有模块的成员都挂载到这个对象中</h2>
+  <script src="module-a.js"></script>
+  <script src="module-b.js"></script>
+
+  <script>
+    moduleA.method1()
+    moduleB.method2()
+    
+    // 外部可以修改模块内部的成员、没有私有空间
+    moduleA.name = 'foo'
+  </script>
+</body>
+</html>
