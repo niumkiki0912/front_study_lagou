@@ -180,3 +180,31 @@
 1. 输出文件名hash
   - 服务器部署时会启用静态资源缓存，提升应用响应速度。
   - 为了解决缓存时间过长重新发版后没有及时更新的问题，生产模式下文件名使用hash
+
+
+
+
+
+
+#### 八、webpack源码
+1. webpack与tapable
+  - webpack编译流程
+    - 配置初始化
+    - 内容编译
+    - 编译后如何输出
+  - 事件驱动型事件流工作机制； 两个核心：负责创建bundles的compilation、 负责编译的compiler，都是tapable库的实例对象
+  - tapable(独立库)核心流程：
+    - 实例化hook注册事件监听， 
+    - 通过hook触发事件监听 
+    - 执行编译生成的可执行代码
+  - hook---tapable的实例对象
+    - 执行机制: 同步、异步(并行、串行)
+    - 执行特点: 
+      - hook: 基本hook， 事件监听器之间是互相独立的；
+      - bailHook: 熔断钩子， 某个钩子的监听返回了非undefined时后续不执行；  
+      - waterfallHook: 瀑布钩子， 上一个钩子的监听返回值可以传递至下一个；
+      - loopHook: 循环钩子，如果当前的钩子未返回false则一直循环执行当前监听器
+  - tapable库的几大类
+    - 同步钩子: SyncHook、syncBailHook、 syncWaterfallHook、 syncLoopHook
+    - 异步串行钩子: AsyncSeriesHook、 AsyncSeriesBailHook、 AsyncSeriesWaterfallHook
+    - 异步并行钩子: AsyncParalleHook、  AsyncParalleBailHook、

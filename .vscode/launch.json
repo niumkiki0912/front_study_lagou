@@ -11,7 +11,7 @@
       "skipFiles": [
         "<node_internals>/**"
       ],
-      "program": "${workspaceFolder}/front_end_engineering/module2/codes/handwriting/01-wp-source-code/dist/build.js"
+      "program": "${workspaceFolder}/front_end_engineering/module2/codes/handwriting/07-wp-hook/01-hook-sync/01-syncHook.js"
     }
   ]
 }

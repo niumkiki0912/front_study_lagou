@@ -1,10 +1,8 @@
  (function(modules) { // webpackBootstrap
-	// The module cache
-	// 定义空对象，用于存放已经被加载过的模块
+ 	// The module cache
  	var installedModules = {};
 
-	// The require function
-	//  webpack当初自定义的, 核心作用就是返回当前模块的exports
+ 	// The require function
  	function __webpack_require__(moduleId) {
 
  		// Check if module is in cache
@@ -29,12 +27,10 @@
  	}
 
 
-	// expose the modules object (__webpack_modules__)
-	// 保存模块，通过 m 属性挂载到自定义的方法身上
+ 	// expose the modules object (__webpack_modules__)
  	__webpack_require__.m = modules;
 
-	// expose the module cache
-	//  保存缓存
+ 	// expose the module cache
  	__webpack_require__.c = installedModules;
 
  	// define getter function for harmony exports
@@ -87,24 +83,26 @@
  	// Load entry module and return exports
  	return __webpack_require__(__webpack_require__.s = "./src/index.js");
  })
- ({
-		"./src/index.js":
-		/*!**********************!*\
-			!*** ./src/index.js ***!
-			\**********************/
-		/*! no static exports found */
-		(function(module, exports, __webpack_require__) {
-			const name = __webpack_require__(/*! ./login */ "./src/login.js")
-			console.log('indexjs===>');
-			console.log(name);
-			module.exports = '入口文件导出内容'
-		}),
-		"./src/login.js":
-		/*!**********************!*\
-			!*** ./src/login.js ***!
-			\**********************/
-		/*! no static exports found */
-		(function(module, exports) {
-			module.exports = 'login 模块'
-		})
- });
+/************************************************************************/
+({
+  "./src/index.js":
+  (function(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony import */ var _login__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./login */ "./src/login.js");
+    // const name = require("./login");
+    // import name from './login'
+    console.log("import===>", _login__WEBPACK_IMPORTED_MODULE_0__["default"]);
+    // module.exports = "入口文件导出内容";
+    }),
+
+  "./src/login.js":
+  (function(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+    __webpack_require__.r(__webpack_exports__);
+    // module.exports = "拉勾教育";
+    /* harmony default export */ __webpack_exports__["default"] = ({
+      name: 'hhhh'
+    });
+  })
+});

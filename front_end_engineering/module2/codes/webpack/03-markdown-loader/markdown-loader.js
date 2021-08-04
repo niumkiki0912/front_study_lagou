@@ -2,7 +2,7 @@ const marked = require('marked')
 
 module.exports = source => {
   // 输入： 资源文件的内容
-  // 输入: 加工之后的结果]]
+  // 输出: 加工之后的结果
   const html = marked(source)
 
   // return `module.exports = ${JSON.stringify(html)}`
