@@ -1,0 +1,51 @@
+[
+  {
+    "path": "/",
+    "component": "/Users/mengkeniu/niumengke/study/lagou/front_study_lagou/03_vue/03-04/nuxt/realword-nuxt/pages/layout",
+    "children": [
+      {
+        "path": "",
+        "name": "home",
+        "component": "/Users/mengkeniu/niumengke/study/lagou/front_study_lagou/03_vue/03-04/nuxt/realword-nuxt/pages/home",
+        "_name": "_7f673b01"
+      },
+      {
+        "path": "/login",
+        "name": "login",
+        "component": "/Users/mengkeniu/niumengke/study/lagou/front_study_lagou/03_vue/03-04/nuxt/realword-nuxt/pages/login",
+        "_name": "_6db86d87"
+      },
+      {
+        "path": "/register",
+        "name": "register",
+        "component": "/Users/mengkeniu/niumengke/study/lagou/front_study_lagou/03_vue/03-04/nuxt/realword-nuxt/pages/login",
+        "_name": "_6db86d87"
+      },
+      {
+        "path": "/profile/:username",
+        "name": "profile",
+        "component": "/Users/mengkeniu/niumengke/study/lagou/front_study_lagou/03_vue/03-04/nuxt/realword-nuxt/pages/profile",
+        "_name": "_8b0c0f72"
+      },
+      {
+        "path": "/settings",
+        "name": "settings",
+        "component": "/Users/mengkeniu/niumengke/study/lagou/front_study_lagou/03_vue/03-04/nuxt/realword-nuxt/pages/settings",
+        "_name": "_26052145"
+      },
+      {
+        "path": "/editor",
+        "name": "editor",
+        "component": "/Users/mengkeniu/niumengke/study/lagou/front_study_lagou/03_vue/03-04/nuxt/realword-nuxt/pages/editor",
+        "_name": "_3cc9670f"
+      },
+      {
+        "path": "/article/:slug",
+        "name": "article",
+        "component": "/Users/mengkeniu/niumengke/study/lagou/front_study_lagou/03_vue/03-04/nuxt/realword-nuxt/pages/article",
+        "_name": "_bd7788d8"
+      }
+    ],
+    "_name": "_489840cc"
+  }
+]
