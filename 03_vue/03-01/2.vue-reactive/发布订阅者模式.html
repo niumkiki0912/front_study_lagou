@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>发布订阅模式</title>
+</head>
+<body>
+  <script>
+    class EventEmitter {
+      constructor() {
+        this.subs = Object.create(null)
+      }
+      $on(eventType, handler) {
+        this.subs[eventType] =  this.subs[eventType] || []
+        this.subs[eventType].push(handler)
+      }
+
+      $emit(eventType) {
+        console.log('arguments===>', arguments);
+        if(this.subs[eventType]  && this.subs[eventType].length > 0) {
+          this.subs[eventType].forEach(handler => {
+            handler(...Array.from(arguments).slice(1))
+          })
+        }
+      }
+    }
+
+    let em = new EventEmitter()
+
+    em.$on('click', (e1, e2) => {
+      console.log('click===>',  e1, e2);
+    })
+
+    em.$on('click', (e1, e2) => {
+      console.log('click1===>', e1, e2);
+    })
+
+
+    em.$emit('click', 111, 222)
+  </script>
+
+
+</body>
+</html>

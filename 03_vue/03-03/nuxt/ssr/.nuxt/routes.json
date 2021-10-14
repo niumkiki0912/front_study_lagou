@@ -1,0 +1,16 @@
+[
+  {
+    "name": "about",
+    "path": "/about",
+    "component": "/Users/mengkeniu/niumengke/study/lagou/front_study_lagou/03_vue/03-04/nuxt/ssr/pages/about.vue",
+    "chunkName": "pages/about",
+    "_name": "_13538666"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/mengkeniu/niumengke/study/lagou/front_study_lagou/03_vue/03-04/nuxt/ssr/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_160e1792"
+  }
+]
